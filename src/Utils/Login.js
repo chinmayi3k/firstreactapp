@@ -12,7 +12,7 @@ export const Login=()=>{
         "password":"",
       } )
       useEffect(()=>{
-  fetch("http://localhost:6010/posts/").then((user)=>user.json()).then((data)=>Setdata(data))
+  fetch("https://my-json-server.typicode.com/chinmayi3k/jsonserver/posts/").then((user)=>user.json()).then((data)=>Setdata(data))
       },[])
   
   
