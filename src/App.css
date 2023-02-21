@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.headerclass{
+  background-color:yellowgreen;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height:12vh;
+  width:100vw;
+  margin:0px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+}
+.slideshowclass{
+  height:55vh;
+  width:99vw;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin: 0px;
+  background-color:aqua;
+}
+.aligncenter{
+  display:flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top:20px;
+}
+.Imagediv{
+display:flex;
+flex-direction: column;
+align-items:center ;
+color:red;
+font-size:bold;
+margin:0px;
+
+}
+.homepage
+{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imagesclass{
+  height:50vh;
+  width:100vw;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.prodDetails{
+  display:flex;
+  height:30vh;
+  width:70vw;
+  justify-content:space-evenly,center;
+  margin:10px;
+  
+}
+.Prodremain{
+  margin-top: 20px;
+  color:blueviolet;
+  text-align:justify;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.body{
+  margin:0px;
+  display: flex;
+  align-items: flex-start;
+}
+.formdiv{
+  display:flex;
+  margin:10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.imageslideclass{
+  height:40vh;
+  width:40vw;
+  margin-left: 10px;
+}
+.imagesize{
+  height:30vh;
+  width:30vw;
+  align-content: center;
+}
+.linkclass{
+  font:black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.subheadclass{
+  height:10vh;
+  width:100vh;
+}
+.textboxclass{
+  height:20px;
+  width:20px;
+}
+
+.mainbuttonstyle{
+  height:5vh;
+  width:15vw;
+  background-color:aqua;
+}
+.buttonstyle{
+  height:5vh;
+  width:5vw;
+}
+.cartbuttonstyle{
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  flex-direction:column;
+}
+input{
+border-radius: 10px;
+border:2px solid aqua;
+}
+label{
+  color:darkorange;
+}
+button{
+
+  padding:10px;
+  
+  border:2px solid aqua;
+  color:orange;
 }

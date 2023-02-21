@@ -1,0 +1,90 @@
+{
+  "Mobiles": [
+    {
+      "id": "1",
+      "imagepath": "../public/Redmi.jpg",
+      "model": "Redmi 9 Activ (Carbon Black, 4GB RAM, 64GB Storage) | Octa-core Helio G35 | 5000 mAh Battery",
+      "Rating": "4",
+      "Price": "8,499",
+      "MRP": "9,399",
+      "Deal": "10% off"
+    },
+    {
+      "id": "2",
+      "imagepath": "./public/samsung.jpg",
+      "model": "Samsung Galaxy M04 Dark Blue, 4GB RAM, 128GB Storage | Upto 8GB RAM with RAM Plus | MediaTek Helio P35 | 5000 mAh Battery",
+      "Rating": "3",
+      "Price": "10,499",
+      "MRP": "11,549",
+      "Deal": "10% off"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "posts": [
+    {
+      "name": "chinmayi kolli",
+      "phone": "09731856658",
+      "email": "chinmayi.kolli@gmail.com",
+      "password": "sridatta",
+      "id": 1
+    },
+    {
+      "name": "chinmayi kolli",
+      "phone": "09731856658",
+      "email": "chinmayi.kolli@gmail.com",
+      "password": "sridatta",
+      "id": 2
+    },
+    {
+      "name": "gvjhh",
+      "phone": "07204346511",
+      "email": "chinmayi.kolli@gmail.com",
+      "password": "sridatta",
+      "id": 3
+    },
+    {
+      "name": "gvjhh",
+      "phone": "07204346511",
+      "email": "chinmayi.kolli@gmail.com",
+      "password": "sridatta",
+      "id": 4
+    },
+    {
+      "name": "gghchipuihi",
+      "phone": "09731856658",
+      "email": "chinmayi.kolli@gmail.com",
+      "password": "sridatta",
+      "id": 5
+    },
+    {
+      "name": "gghchipuihi",
+      "phone": "09731856658",
+      "email": "chinmayi.kolli@gmail.com",
+      "password": "sridatta",
+      "id": 6
+    },
+    {
+      "name": "dhruva",
+      "phone": "07204346511",
+      "email": "chinmayi.kolli@gmail.com",
+      "password": "sridatta",
+      "id": 7
+    },
+    {
+      "name": "dhruva",
+      "phone": "07204346511",
+      "email": "chinmayi.kolli@gmail.com",
+      "password": "sridatta",
+      "id": 8
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
