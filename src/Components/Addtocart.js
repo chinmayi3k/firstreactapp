@@ -40,7 +40,7 @@ export function Addtocart(props){
       
       
     Setbgcolor(true);
-      Setfinalprod({"id":e.target.id});
+      Setfinalprod({"id":e.target.id,"qty":e.target.value});
      
    }
 

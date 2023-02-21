@@ -3,7 +3,7 @@ import React from "react";
 export function getProd(val){
     return(
      (dispatch)=>   {
-        var url="http://localhost:6010/";
+        var url="https://my-json-server.typicode.com/chinmayi3k/jsonserver/";
         var newurl=url.concat(val);
 
       console.log("url",newurl);
