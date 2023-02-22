@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/firstreactapp/static/css/main.1c9d1809.css",
-    "main.js": "/firstreactapp/static/js/main.c7d08a26.js",
+    "main.js": "/firstreactapp/static/js/main.403a9a02.js",
     "static/js/787.020cb2b5.chunk.js": "/firstreactapp/static/js/787.020cb2b5.chunk.js",
     "static/media/mobiles.jpg": "/firstreactapp/static/media/mobiles.912ad66ce10229649f79.jpg",
     "static/media/laptop.png": "/firstreactapp/static/media/laptop.73608869840732bd6db0.png",
     "static/media/homeappliances.jpg": "/firstreactapp/static/media/homeappliances.8a86b98ab906642b610a.jpg",
     "index.html": "/firstreactapp/index.html",
     "main.1c9d1809.css.map": "/firstreactapp/static/css/main.1c9d1809.css.map",
-    "main.c7d08a26.js.map": "/firstreactapp/static/js/main.c7d08a26.js.map",
+    "main.403a9a02.js.map": "/firstreactapp/static/js/main.403a9a02.js.map",
     "787.020cb2b5.chunk.js.map": "/firstreactapp/static/js/787.020cb2b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c9d1809.css",
-    "static/js/main.c7d08a26.js"
+    "static/js/main.403a9a02.js"
   ]
 }
