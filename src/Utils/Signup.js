@@ -14,7 +14,7 @@ const [rowdata,setRowdata]=useState({
 
 });
 useEffect(()=>{
-    fetch("http://localhost:6010/posts/").then((user)=>user.json()).then((data)=>Setdata(data)).catch((err)=>console.log(err))
+    fetch("https://my-json-server.typicode.com/chinmayi3k/jsonserver/posts/").then((user)=>user.json()).then((data)=>Setdata(data)).catch((err)=>console.log(err))
         },[])
 
 const handleChange=(e)=> {
@@ -24,7 +24,7 @@ const handleChange=(e)=> {
 const  clicksubmit=(e)=>   {
     e.preventDefault();
     
-    fetch("http://localhost:6010/posts/",{
+    fetch("https://my-json-server.typicode.com/chinmayi3k/jsonserver/posts/",{
         method:"POST",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(rowdata)
