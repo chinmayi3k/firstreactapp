@@ -45,7 +45,7 @@ export const CartItems=()=>{
     <div>
     <button  id={item.id} onClick={DeleteCartItem} >Delete</button>
     </div>
-   {cartitems.filter((cart)=>{return(<div>Quantity :  {cart.id==item.id ?cart.qty:""}</div>)})}
+   
 
     </div>
     
