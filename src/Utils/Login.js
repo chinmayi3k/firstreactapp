@@ -12,14 +12,15 @@ export const Login=()=>{
         "password":"",
       } )
       useEffect(()=>{
-  fetch("http://localhost:6010/posts/").then((user)=>user.json()).then((data)=>Setdata(data))
+  fetch("http://evawsdb.eba-pbcfrydb.ap-south-1.elasticbeanstalk.com/users/").then((user)=>user.json()).then((data)=>Setdata(data))
       },[])
   
   
       const handlesubmit=(e)=>{
         e.preventDefault();
         console.log(userDetails);
-    var users= data.filter((user)=>{return(user.name==userDetails.name && user.password==userDetails.password )});   
+        console.log(data);
+    var users= data.filter((user)=>{return(user.Name==userDetails.name && user.Password==userDetails.password )});   
     console.log(users);
  if(users.length)
   navigate("/");

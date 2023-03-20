@@ -10,8 +10,10 @@ export function Products(props){
   const proddata=useSelector((state)=>state.apiReducer.Proddetails);
   
     const [params,setParams]=useState(props.value);
-  
+    const proddetails=proddata.filter((prod)=>prod.productname == params);
+      console.log("details"+proddetails.length);
   useEffect(()=>
+  
 {  dispatch(getProd(params));
   
 },[params]);
@@ -19,18 +21,21 @@ export function Products(props){
 return(
 
     <div >
-  { proddata.map((prod)=>{
+    
+  { proddetails.map((prod)=>{ 
     return(
+     
     <div className="prodDetails">
-   <div> <img className="imagesize" src={prod.imagepath} alt="mobimage"/></div>
+                                                                                              
+   <div> <img className="imagesize" src={process.env.PUBLIC_URL+`/Images/${prod.productname}${prod.mob_id}.jpg`} alt="mobimage"/></div>
     <div className="Prodremain">
     <div >
     
-     Model:<Link to={`/Addcartpage/${prod.id}`} >  {prod.model} </Link>
+     Model:<Link to={`/Addcartpage/${prod.mob_id}`} >  {prod.model_name} </Link>
     </div>
     <div>
     Rating:<span><Ratingcomp rating={prod.Rating}/></span></div>
-    <div>Price :  {prod.Price}</div>
+    <div>Price :  {prod.price}</div>
     <div>Free delivery by amazon</div>
     </div>
     </div>)}

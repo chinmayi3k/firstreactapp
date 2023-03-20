@@ -13,8 +13,9 @@ export const CartItems=()=>{
 
     useEffect(()=>{
         if(flag){
-       const p= cartitems.map((model)=>cartitemsmodels.filter((ci)=>ci.id==model.id));
+       const p= cartitems.map((model)=>cartitemsmodels.filter((ci)=>ci.mob_id==model.id));
        SetcartItem(p);
+       
        Setflag(false);
         }
         },[flag]);
@@ -31,19 +32,19 @@ export const CartItems=()=>{
         {cartItem.flat().map((item)=>{
     return(
      <div className="prodDetails">
-    <div> <img className="imagesize" src={item.imagepath} alt="mobimage"/></div>
+    <div> <img className="imagesize" src={process.env.PUBLIC_URL+`/Images/${item.productname}${item.mob_id}.jpg`} alt="mobimage"/></div>
     <div className="Prodremain">
     <div>
     
-     Model:   {item.model} 
+     Model:   {item.model_name} 
     </div>
-    <div>Price :  {item.Price}</div>
+    <div>Price :  {item.price}</div>
     <div> MRP: <s> {item.MRP} </s></div>
     
     <br/>
 
     <div>
-    <button  id={item.id} onClick={DeleteCartItem} >Delete</button>
+    <button  id={item.mob_id} onClick={DeleteCartItem} >Delete</button>
     </div>
     </div>
     

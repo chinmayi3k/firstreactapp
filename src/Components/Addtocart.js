@@ -17,7 +17,7 @@ export function Addtocart(props){
         const vals=Array.from({length: 10}, (_, i) => i + 1)
         useEffect(()=>{
           
-        Setspecificmodel(productModel.filter((models)=>{return(models.id==props.modelId)}));
+        Setspecificmodel(productModel.filter((models)=>{return(models.mob_id==props.modelId)}));
         console.log("specific"+specificmodel);
       
          }
@@ -54,19 +54,19 @@ export function Addtocart(props){
           specificmodel.map((prod)=>{
             return(<div>
             <div className="prodDetails">
-           <div> <img className="imagesize" src={prod.imagepath} alt="mobimage"/></div>
+           <div> <img className="imagesize" src={process.env.PUBLIC_URL+`/Images/${prod.productname}${prod.mob_id}.jpg`} alt="mobimage"/></div>
             <div className="Prodremain">
             <div >
             
-             Model: {prod.model} 
+             Model: {prod.model_name} 
             </div>
             <div>
             Rating:<span><Ratingcomp rating={prod.Rating}/></span></div>
-            <div>Price :  {prod.Price}</div>
+            <div>Price :  {prod.price}</div>
             <div> MRP: <s> {prod.MRP} </s></div>
             <div>Free delivery by Electroshop</div>
             <div> Quantity:
-            <select>
+            <select >
             {vals.map((val)=>{return(<option value={val}>{val}</option>)})}
             </select>
     </div>
@@ -78,7 +78,7 @@ export function Addtocart(props){
           <br/> 
 <div class="cartbuttonstyle">
 
-<button value= {buttonText}  id={prod.id}  name="Addcart" className="mainbuttonstyle " style={{backgroundColor:bgcolor?"aqua":"lightgreen"}} onClick={Addition}> {buttonText}</button>
+<button value= {buttonText}  id={prod.mob_id}  name="Addcart" className="mainbuttonstyle " style={{backgroundColor:bgcolor?"aqua":"lightgreen"}} onClick={Addition}> {buttonText}</button>
 
 
 

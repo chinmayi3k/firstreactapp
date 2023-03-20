@@ -7,8 +7,8 @@ export const AllProducts=()=>{
        <h1> Deals of Products</h1>
         <div className="imagesclass">
   
-<div className="Imagediv"><Link to="/Productpage/Mobiles"><img src={mobile} className="imagesize" data-name="mobiles" alt="mobiles" /></Link>Mobiles 10% off</div>
-<div className="Imagediv"><Link to="/Productpage/Laptops"><img src={laptop} className="imagesize"  data-name="laptops" alt="laptops" /></Link>Laptops 10% off</div>
+<div className="Imagediv"><Link to="/Productpage/mobile"><img src={mobile} className="imagesize" data-name="mobiles" alt="mobiles" /></Link>Mobiles 10% off</div>
+<div className="Imagediv"><Link to="/Productpage/laptop"><img src={laptop} className="imagesize"  data-name="laptops" alt="laptops" /></Link>Laptops 10% off</div>
 </div>
 </>
     )
