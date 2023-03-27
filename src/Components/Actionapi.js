@@ -4,7 +4,7 @@ export function getProd(val){
     
     return(
      (dispatch)=>   {
-        var url="http://evawsdb.eba-pbcfrydb.ap-south-1.elasticbeanstalk.com/products/";
+        var url="https://api.chinmayiapi.com/products/";
     
         
       
