@@ -30,7 +30,7 @@ const handleChange=(e)=> {
 const  clicksubmit=(e)=>   {
     e.preventDefault();
     console.log(rowdata);
-    fetch("https:/api.chinmayiapi.com/users/",{
+    fetch("https:/api.chinmayiapi.com/products/users/",{
         method:"POST",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(rowdata)
