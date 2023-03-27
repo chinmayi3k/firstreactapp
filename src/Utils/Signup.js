@@ -30,7 +30,7 @@ const handleChange=(e)=> {
 const  clicksubmit=(e)=>   {
     e.preventDefault();
     console.log(rowdata);
-    fetch("http://evawsdb.eba-pbcfrydb.ap-south-1.elasticbeanstalk.com/users/",{
+    fetch("https:/api.chinmayiapi.com/users/",{
         method:"POST",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(rowdata)

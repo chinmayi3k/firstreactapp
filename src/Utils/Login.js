@@ -12,7 +12,7 @@ export const Login=()=>{
         "password":"",
       } )
       useEffect(()=>{
-  fetch("http://evawsdb.eba-pbcfrydb.ap-south-1.elasticbeanstalk.com/users/").then((user)=>user.json()).then((data)=>Setdata(data))
+  fetch("https://api.chinmayiapi.com/users/").then((user)=>user.json()).then((data)=>Setdata(data))
       },[])
   
   
