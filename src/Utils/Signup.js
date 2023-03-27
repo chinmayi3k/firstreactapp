@@ -14,7 +14,7 @@ const [rowdata,setRowdata]=useState({
 
 });
 useEffect(()=>{
-    fetch("http://evawsdb.eba-pbcfrydb.ap-south-1.elasticbeanstalk.com/users/").then((user)=>user.json()).then((data)=>Setdata(data)).catch((err)=>console.log(err))
+    fetch("https://api.chinmayiapi.com/users/").then((user)=>user.json()).then((data)=>Setdata(data)).catch((err)=>console.log(err))
         },[])
 useEffect(()=>{
     if(formflag){
